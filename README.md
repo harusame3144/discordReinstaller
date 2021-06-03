@@ -3,9 +3,6 @@
 ## This Project Use Standard JS Style
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 
-# Creator: Sangoon_Is_Noob
-![Sangoon_Profile_SRC](https://chinobot.ga/author_profile.png)
-
 ## License
 
 ```
