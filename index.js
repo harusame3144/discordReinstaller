@@ -43,7 +43,7 @@ console.log(`
   */
 `)
 
-process.version = '0.1.5'
+process.version = '0.1.7'
 const fs = require('fs')
 const path = require('path')
 const child = require('child_process')
@@ -120,11 +120,11 @@ async function start () {
     console.log(`Sorry, Only supports windows (win32) but your os is ${os.platform()}`)
     question(rl)
   }
-  const discordUrls = [{ path: '', version: 'Discord' }, { path: '/canary', version: 'DiscordCanary' }, { path: '/ptb', version: 'DiscordPTB' }]
+  const discordUrls = [{ path: 'stable', version: 'Discord' }, { path: 'canary', version: 'DiscordCanary' }, { path: 'ptb', version: 'DiscordPTB' }]
   const discordDownloadUrls = {}
 
   for (const item of discordUrls) {
-    const result = await getDiscordDownload(`https://discordapp.com/api/download${item.path}?platform=win`)
+    const result = await getDiscordDownload(`http://discord.com/api/downloads/distributions/app/installers/latest?channel=${item.path}&platform=win`)
     discordDownloadUrls[item.version] = result
     console.log(`Version Info | ${item.version}: ${result.split(/\/(Discord|Setup.exe)/g)[0].split('/').slice(-1)}`)
   }
