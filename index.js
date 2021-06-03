@@ -114,7 +114,7 @@ async function start () {
   const discordDownloadUrls = {}
 
   for (const item of discordUrls) {
-    const result = await getDiscordDownload(`http://discord.com/api/downloads/distributions/app/installers/latest?channel=${item.path}&platform=win`)
+    const result = await getDiscordDownload(`https://discord.com/api/downloads/distributions/app/installers/latest?channel=${item.path}&platform=win`)
     discordDownloadUrls[item.version] = result
     console.log(`Version Info | ${item.version}: ${result.split(/\/(Discord|Setup.exe)/g)[0].split('/').slice(-1)}`)
   }
