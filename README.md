@@ -1,3 +1,6 @@
+# This Repository is Archived
+## Reason: Discord updated download url structures. I won't apply it
+
 # Discord Reinstaller
 ![Language](https://img.shields.io/badge/language-Javascript,%20Node.js-brightgreen) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 ## This Project Use Standard JS Style
